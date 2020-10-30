@@ -1,0 +1,140 @@
+*{
+    font-family: Atma;
+    font-weight: 700;
+}
+
+.modal {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+
+.btn__open__button {
+    float: bottom;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+}
+
+.container {
+    display: flex;
+}
+
+.serachContainer {
+    /*display: none;*/
+    position: absolute;
+    left: calc(600px - (100%/2));
+    top: calc(400px - (100%/2));
+    width: 900px;
+    height: 600px;
+    border: 5px;
+    background-color: white;
+    z-index: 1; /* Sit on top */
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+}
+
+.btnOpenPokeMonList{
+    color: white;
+    font-size: 40px;
+    border: none;
+    background: transparent;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+/*Search Page*/
+.searchInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchInput {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.btnSearch {
+    width: 250px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/*Card Pokemon*/
+
+.cardWrapperSearchPage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cardWrapperMainPage {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cardContainer {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    background-color: #f3f4f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageContainer{
+    margin-right: 25px;
+}
+
+.pokemonCardContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnClickCard{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: red;
+    font-size: 25px;
+    height: 30px;
+}
+
+.happieContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.cuteIcon{
+    margin: 5px;
+}
